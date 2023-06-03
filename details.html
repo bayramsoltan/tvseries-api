@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;500&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<style>
+    body{
+        background-color: black;
+        color: white;
+        font-family: "Rajdhani", sans-serif;
+    }
+    img{
+        border-radius: 20px;
+    }
+
+    .container{
+        display: flex;
+        align-items:flex-start;
+        justify-content: center;
+        gap: 50px;
+        margin: 60px;
+    }
+    .container .card-explan{
+        margin: 0 200px 0 0;
+    }
+    .imdb{
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    .card-genre{
+        font-size: 20px;
+    }
+
+</style>
+<body>
+
+<div class="container">
+    <div class="sol">
+     <img src="" class="card-img-bottom" alt="" id="image" style="width: 18rem;">
+    </div>
+    <div class="sag">
+        <h1 class="card-title" id="title"></h1>
+        <div class="card-explan"><p id="explan"></p></div>
+        <p class="card-genre" id="genres"><small class="text-body-secondary"></small></p>
+        <p class="premier" id="premier"></p>
+        <div class="imdb" id="imdb"><sup>⭐</sup></div>
+    </div>
+</div>
+    <script src="js/details.js" type="module"></script>
+</body>
+</html>
